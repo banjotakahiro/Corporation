@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/* ここの理解から */
+.company_title {
+    font-size: 36px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+    background-color: unset;
+}
+
+.company_title span {
+    text-align: inherit;
+    margin-top: 5px;
+}
+
+#company_page {
+    background: #192F60;
+    padding: 165px 4% 15% 4%;
+}
+
+#company_index {
+    background-color: #FFFFFF;
+    padding: 66px 84px;
+    text-align: left;
+    width: fit-content;
+    margin-top: -150px;
+}
+
+#company_index.caption_set::before,
+#company_index.caption_set::after {
+    margin: 3%;
+}
+
+
+#company_index .company_title {
+    font-size: 24px;
+    color: #192F60;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#company_index p {
+    text-align-last: left;
+    margin: auto;
+}
+
+#philosophy {
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 4%;
+    margin-top: 3%;
+}
+
+#philosophy .company_title {
+    text-align: center;
+}
+
+.philosophy_flex {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.philosophy_item {
+    width: 288px;
+    height: 288px;
+    background-color: #192F60;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.philosophy_item h3 {
+    font-size: 40px;
+}
+.philosophy_item p {
+    margin-top: 20px;
+}
+
+#delegate {
+    margin: 78px auto;
+}
+/* メッセージと画像の横並び */
+.delegate_flex {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: auto;
+}
+/* CSS margin autoとは、要素の左右のmarginを自動的に調整して、要素を中央に配置する方法です。 */
+/* 具体的には、要素に対して margin: 0 auto; のように指定することで、左右のmarginを自動的に均等に調整して、要素を中央に配置することができます。 */
+
+.delegate_flex img {
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+.delegate_left {
+    text-align: justify;
+    width: 40%;
+}
+
+.delegate_left p {
+    letter-spacing: 0.1em;
+    margin-top: 30px;
+}
+
+.delegate_left p:first-of-type {
+    margin-top: 10%;
+}
+
+#outline {
+    margin: 150px 30%;
+}
+.outline_list {
+    margin-top: 10%;
+}
+.outline_hr::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #EDEEF0;
+    margin: 3% 0; 
+}
+.outline_list dt {
+    float: left;
+    font-weight: 700;
+    letter-spacing: 0.7em;
+}
+.outline_list dd {
+    margin-left: 170px;
+    letter-spacing: 0.03em;
+}
+
+/* Location */
+#location {
+    background-color: #FFFFFF;
+    padding: 4%;
+}
+#location .company_title {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+.location_map {
+    margin-top: 3%;
+}

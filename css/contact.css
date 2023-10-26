@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* Top Content */
+#contact_page {
+    background: #192F60;
+    padding: 165px 4% 15% 4%;
+}
+
+/* コンタクトフォーム */
+#contact_form {
+    background: #FFFFFF;
+    margin: -13% 4% 4% 4%;
+    padding: 8% 23%;
+}
