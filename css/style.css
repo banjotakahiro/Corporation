@@ -735,6 +735,59 @@ img {
         width: 100%;
         height: 50%;
         position: fixed;
-        
+        top: 0;
+        left: 100%;
+        z-index: 99;
+        background: #fff;
+        transition: .5s;
+    }
+    .menu_nav {
+        width: auto;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .menu_nav li {
+        margin-left: 0;
+    }
+
+    /* アイコンがクリックされたらメニューを表示 */
+    #hamburger_input:checked ~ .menu_content {
+        left: 0;
+        /* メニューを画面に入れる */
+    }
+
+    /* Main Visual */
+
+    .main_content {
+        height: auto;
+    }
+
+    /* 背景付き英語テキスト */
+    .big_bg {
+        width: 100%;
+        background-size: contain;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    /* footer */
+
+    .footer_flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_flex h1 {
+        align-self: flex-start;
+    }
+    .footer_flex .logo {
+        width: 44px;
+    }
+    .footer_flex a {
+        font-size: 12px;
+    }
+    .footer_menu_nav a {
+        font-size: max(3vw,12px);
     }
 }
