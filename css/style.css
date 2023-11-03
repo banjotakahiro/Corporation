@@ -659,7 +659,49 @@ img {
         line-height: 1.3rem;
     }
 
+    #news .button span,
+    #news .button i {
+        color: #FFFFFF;
+        z-index: 2;
+    }
+
     /* Contact */
+
+    #contact::before {
+        width: 20px;
+        height: 40px;
+    }
+    .contact_left {
+        width: 60%;
+        margin: 3%;
+    }
+    /* 見出し */
+    .contact_content .section_title {
+        font-size: max(4vw,16px);
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 6% auto;
+    }
+
+    .contact_left p {
+        margin-top: 12%;
+        font-size: 14px;
+    }
+    .contact_button {
+        padding: 5% 10%;
+        font-size: max(4vw, 18px);
+    }
+    .contact_right {
+        width: 40%;
+        margin: initial;
+        margin-top: 12%;
+    }
+    .contact_right img {
+        /* overflow: hidden; */
+    }
     #contact {
         padding: 4%;
     }
@@ -773,6 +815,106 @@ img {
         flex-direction: column;
     }
 
+    .big_bg::after {
+        height: 47.5vw;
+    }
+
+    /* 未来を変えるチカラ */
+    .content_title {
+        font-size: 6vw;
+        line-height: 2em;
+        padding: 60px 15%;
+        order: 2;
+        width: 70%;
+        margin: auto;
+        margin-top: -5%;
+        white-space: nowrap;
+    }
+
+
+    .big_bg h2 {
+        position: initial;
+        /* 横幅が最重要だからvwに変更 */
+        font-size: 10.5vw;
+        line-height: 17vw;
+        margin-top: -4.7vw;
+    }
+
+    /* About */
+    /* About全体 */
+    #about {
+        padding: 0;
+        background-color: unset;
+        margin-top: 5%;
+    }
+
+    /* flexの解除 */
+    .about_content {
+        display: block;
+    }
+    /* 台形と見出しの非表示 */
+    .about_content::before,
+    #about .content_title {
+        display: none;
+    }
+    /* 右側キャプション全体 */
+    .about_right {
+        padding: 4%;
+        width: 100%;
+        filter: unset;
+    }
+
+    /* Service */
+    #service {
+        margin-top: 5%;
+    }
+
+    .box .section_title {
+        font-size: 24px;
+    }
+    /* 画像を大きく */
+    .box img {
+        width: 70%;
+    }
+
+    /* News */
+    .news_content::before {
+        width: 100%;
+    }
+
+    /* タイトル */
+    .page_title {
+        margin: auto;
+        font-size: 20px;
+        padding: 3% 10%;
+    }
+    /* タイトルカギカッコ */
+    .page_title::before {
+        width: 20px;
+        height: 20px;
+        margin: 15%;
+    }
+    /* ニュースリスト */
+    .news_grid {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: 
+        "big"
+        "item2"
+        "item3"
+        "item4"
+        "item5";
+    }
+
+    .item .day {
+        font-size: 3.5vw;
+    }
+    .item h3 {
+        font-size: max(4vw, 16px);
+        line-height: 6vw;
+    }
+    #about .section_title {
+        font-size: max(5vw, 24px);
+    }
     /* footer */
 
     .footer_flex {
