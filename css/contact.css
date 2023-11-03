@@ -11,4 +11,51 @@
     background: #FFFFFF;
     margin: -13% 4% 4% 4%;
     padding: 8% 23%;
+    display: block;
 }
+
+form div {
+    margin: 5% auto;
+}
+.form_title{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #192F60;
+}
+
+.form_title span {
+    background-color: #BA1C1C;
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 2px 7px;
+    margin-left: 10px;
+}
+
+.adopt_area label {
+    white-space: nowrap;
+}
+
+input[type="radio"]{
+    margin-left: 3%;
+    margin-right: 5px;
+}
+
+.name_flex {
+    display: flex;
+    gap: 3%;
+    margin-top: auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: solid 1px #c4c4c4;
+    padding: 2%;
+    width: 100%;
+}
+
+::placeholder {
+    color: #c4c4c4;
+}
+
