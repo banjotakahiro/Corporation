@@ -765,6 +765,7 @@ img {
     }
 
     /* 背景付き英語テキスト */
+    /* 質問箇所 */
     .big_bg {
         width: 100%;
         background-size: contain;
