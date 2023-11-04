@@ -151,3 +151,100 @@
 .location_map {
     margin-top: 3%;
 }
+
+@media (max-width: 960px) {
+    /* Company Index */
+    #company_index {
+        margin-top: -13%;
+        width: 80%;
+    }
+
+    /* Philosophy */
+
+    .philosophy_item {
+        width: 27vw;
+        height: 27vw;
+    }
+
+    /* Delegate */
+    .delegate_flex {
+        gap: 1rem;
+    }
+    .delegate_left {
+        width: 60%;
+    }
+    .delegate_flex img {
+        width: 40%;
+    }
+
+    /* Outline */
+
+    /* 会社概要全体 */
+    #outline {
+        margin: 150px 25%;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Company Index */
+    #company_index {
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: -9%;
+        padding: 66px 82px;
+        width: auto;
+    }
+    #company_index .company_title {
+        font-size: 20px;
+        white-space: normal;
+    }
+
+    /* Philosophy */
+    #philosophy .company_title {
+        margin: 20px auto;
+    }
+
+    .philosophy_flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .philosophy_item {
+        width: 210px;
+        height: 210px;
+    }
+
+    .philosophy_item + .philosophy_item {
+        margin-top: 3%;
+    }
+
+    /* Delegate */
+    .delegate_flex {
+        flex-direction: column;
+    }
+
+    .delegate_left,
+    .company_title,
+    .delegate_flex img {
+        width: auto;
+    }
+
+    /* Outline */
+    #outline {
+        margin: 17% auto;
+    }
+    .outline_hr {
+        width: fit-content;
+        margin: auto;
+    }
+    .outline_hr::after {
+        width: 344px;
+    }
+    .outline_list dd {
+        margin-left: 143px;
+    }
+    /* Location */
+    #location {
+        padding: 10% 4%;
+    }
+}

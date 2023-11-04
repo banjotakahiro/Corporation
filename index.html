@@ -23,14 +23,23 @@
                 <span>NT Co.,ltd</span>
             </a>
         </h1>
-        <nav class="menu_content">
-            <ul class="menu_nav">
-                <li><a href="index.html">Top</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="company.html">Company</a></li>
-                <li class="contact_btn"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="nav">
+
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="hamburger_input" type="checkbox">
+
+            <!-- ハンバーガーアイコン -->
+            <label for="hamburger_input" class="hamburger_open"><span></span></label>
+            <nav class="menu_content">
+                <ul class="menu_nav">
+                    <li><a href="index.html">Top</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="company.html">Company</a></li>
+                    <li class="contact_btn"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <div id="main" class="main_content">
@@ -133,7 +142,7 @@
             </article>
         </div>
         <a class="button" href="news.html">
-            ニュース一覧
+            <span>ニュース一覧</span>
             <i class="fa-regular fa-circle-right"></i>
         </a>
     </section>

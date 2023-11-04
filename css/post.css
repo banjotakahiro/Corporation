@@ -97,3 +97,32 @@ Top Content
     margin-left: 0;
     margin-top: 40px;
 }
+
+/* モバイル版 */
+@media (max-width: 600px) {
+    /* Top Content */
+    /* TOP NEWS横並び */
+    .news_nav ul {
+        justify-content: center;
+        gap: unset;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+
+    .news_nav li {
+        flex-grow: 1;
+    }
+
+    .news_nav li:first-child::after {
+        left: 100%;
+    }
+
+    /* 記事内容 */
+    #news_post {
+        margin: -15% 4% 4% 4%;
+    }
+    .post_info h2 {
+        font-size: 20px;
+    }
+}

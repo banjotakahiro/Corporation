@@ -55,7 +55,117 @@ textarea {
     width: 100%;
 }
 
-::placeholder {
+input::placeholder {
     color: #c4c4c4;
 }
 
+.form_line {
+    border-style: none;
+    border-top: 1px solid #EDEEF0;
+}
+
+.policy_area {
+    text-align: center;
+}
+
+.policy_link {
+    text-decoration: underline;
+    color: #219AC8;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.checkbox_text {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    margin-top: 3%;
+    position: relative;
+}
+
+.checkbox_text::before {
+    content: '';
+    border: 1px solid #DDD;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + .checkbox_text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 10px;
+    margin: auto;
+    width: 10px;
+    height: 15px;
+    border-right: 2px solid #7D7F86;
+    border-bottom: 2px solid #7D7F86;
+    transform: rotate(45deg);
+}
+
+.submit_btn {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: #192F60;
+    padding: 3% 20%;
+    margin: 12% auto 0 auto;
+    transition: all 0.3s ease-out;
+}
+.submit_btn:hover {
+    background-color: #192F6000;
+    outline: solid 1px #192F60;
+    color: #192F60;
+}
+
+@media (max-width: 960px) {
+    #contact_form {
+        padding: 8% 10%;
+    }
+}
+
+/* モバイル版 */
+@media (max-width: 600px) {
+    /* コンタクトフォーム */
+    #contact_form {
+        margin-top: -9%;
+    }
+    /* お名前 */
+    .name_flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* 同意エリア */
+    .policy_area p {
+        font-size: 12px;
+        line-height: normal;
+    }
+    /* 同意する全体 */
+    .checkbox_text {
+        font-size: 12px;
+    }
+    /* 四角のチェックボックスの作成 */
+    .checkbox_text::before {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* チェック済みのときにチェックマークを表示 */
+    input[type = "checkbox"]:checked + .checkbox_text::after {
+        width: 6px;
+        height: 10px;
+    }
+
+    /* 送信ボタン */
+    .submit_btn {
+        width: 100%;
+    }
+}
