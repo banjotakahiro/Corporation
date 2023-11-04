@@ -700,7 +700,7 @@ img {
         margin-top: 12%;
     }
     .contact_right img {
-        /* overflow: hidden; */
+        overflow: hidden;
     }
     #contact {
         padding: 4%;
@@ -932,5 +932,16 @@ img {
     }
     .footer_menu_nav a {
         font-size: max(3vw,12px);
+    }
+
+    /* トップページ以外の共通 */
+    /* ページタイトル全体 */
+
+    .top_content {
+        display: block;
+    }
+    .top_title {
+        text-align: center;
+        padding: 25px 60px;
     }
 }
